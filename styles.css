@@ -97,7 +97,7 @@ nav {
 main {
     grid-area: main;
     display: grid;
-    grid-template: 1fr 3fr / 2fr 1fr;
+    grid-template: auto / 2fr 1fr;
 }
 
 .main-header {
@@ -124,7 +124,6 @@ main {
     box-shadow: 0 12px 12px -8px hsl(from var(--clr-dark) h s l / 0.75);
     padding: 0.6rem;
 }
-
 
 .right-col {
     padding: 1.2rem;
