@@ -108,7 +108,19 @@ main {
     grid-column: 1 / 2;
     border: 2px solid var(--clr-primary);
     padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
+
+.card-header img {
+    justify-self: center;
+}
+
+.site-card{
+    margin-bottom: 4rem;
+}
+
 
 .right-col {
     border: 2px solid var(--clr-primary);
