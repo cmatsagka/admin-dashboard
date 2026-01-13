@@ -19,13 +19,11 @@
     gap: 1rem;
 }
 
-
-
-.sidebar {
+aside {
     grid-row: 1 / 2;
 }
 
-.main {
+main {
     grid-column: 2;
 }
 
