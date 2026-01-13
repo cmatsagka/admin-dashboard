@@ -101,6 +101,14 @@ aside {
     margin-bottom: 2.5rem;
 }
 
+.dot {
+  height: 50px;
+  width: 50px;
+  background-color: var(--clr-primary);
+  border-radius: 50%;
+  display: inline-block;
+}
+
 nav {
     flex: 1;
     display: flex;
@@ -158,7 +166,7 @@ main {
 }
 
 .card {
-    border: 0;
+    border: 0gi;
     border-radius: 12px;
     box-shadow: 0 12px 12px -8px hsl(from var(--clr-light) h s l / 0.25);
     padding: 0.6rem;
