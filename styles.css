@@ -25,6 +25,13 @@
 
 aside {
     grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+nav {
+    flex: 1;
 }
 
 main {
