@@ -1,10 +1,35 @@
 :root {
-  
+    --clr-primary: hsla(74, 32%, 32%, 1);
+    --clr-dark: hsla(88, 38%, 15%, 1);
+    --clr-light: hsla(52, 94%, 94%, 1);
+    --clr-accent-light: hsla(32, 65%, 62%, 1);
+    --clr-accent: hsla(28, 67%, 44%, 1);
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 3;
+    gap: 1rem;
+}
+
+
+
+.sidebar {
+    grid-row: 1 / 2;
+}
+
+.main {
+    grid-column: 2;
+}
+
+footer {
+    grid-column: 1 / 3;
 }
 
