@@ -306,18 +306,17 @@ main {
 }
 
 .right-col {
-    grid-row: 2 / 3;
     grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
     padding: 1.2rem;
-    display: grid;
-    grid-template: 4fr;
-    gap: 1rem;
     font-size: 1rem;
     text-align: center;
 }
 
 .card {
-    border: 0gi;
+    border: 0;
     border-radius: 24px;
     border: 1px solid hsla(52, 94%, 100%, 0.5);
     box-shadow: 0 8px 32px 0 hsla(88, 38%, 5%, 0.25);
@@ -325,8 +324,28 @@ main {
     padding: 0.6rem;
 }
 
+.atmosphere-widget {
+    background-color: linear-gradient(135deg, var(--clr-accent-light), var(--clr-accent));
+    color: var(--clr-light);
+}
+
+.seed-bank ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.seed-bank li {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem;
+    border-bottom: 1px solid hsla(88, 38%, 15%, 0.05);
+}
+
 .seed-bank img {
-    justify-self: center;
+    height: 30px;
 }
 
 footer {
