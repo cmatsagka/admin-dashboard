@@ -120,8 +120,13 @@ aside {
     object-fit: contain;
 }
 
+.logo:hover img {
+    transform: rotate(-5deg) scale(1.05);
+    transition: transform 0.3s ease;
+}
+
 .brand-name {
-    font-weight: 400;
+    font-weight:400;
     font-size: 1.4rem;
     line-height: 1;
 }
