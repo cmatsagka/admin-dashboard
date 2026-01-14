@@ -232,7 +232,8 @@ aside {
     grid-area: main;
     display: grid;
     grid-template: auto / 1.5fr 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
+    align-items: start;
 }
 
 main.main-content::-webkit-scrollbar {
@@ -273,7 +274,7 @@ main.main-content::-webkit-scrollbar-thumb {
 .left-col {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .site-card{
