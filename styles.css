@@ -15,7 +15,9 @@
 }
 
 body {
-    min-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
     background-color: var(--clr-dark);
     color: var(--clr-dark);
     font-family: Arial, Helvetica, sans-serif;
