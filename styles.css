@@ -219,10 +219,11 @@ aside {
     color: var(--clr-accent);
 }
 
-main {
+.main-content {
     grid-area: main;
     display: grid;
-    grid-template: auto / 2fr 1fr;
+    grid-template: auto / 1.5fr 1fr;
+    gap: 2rem;
 }
 
 .main-header {
@@ -345,7 +346,7 @@ main {
 }
 
 .seed-bank img {
-    height: 30px;
+    height: ;
 }
 
 footer {
