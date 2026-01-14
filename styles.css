@@ -75,7 +75,6 @@ button:hover {
 input{
     background-color: var(--clr-light);
     color: var(--clr-dark);
-    font-size: 1.1rem;
 }
 
 input:focus {
@@ -280,8 +279,18 @@ main.main-content::-webkit-scrollbar-thumb {
 
 .search-area {
     display: flex;
-    align-items: center;
+    flex: 0 1 400px;
     gap: 0.8rem;
+}
+
+.search-bar {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+.filter {
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
 }
 
 .left-col {
