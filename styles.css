@@ -247,19 +247,27 @@ main.main-content::-webkit-scrollbar-thumb {
 
 .main-header {
     grid-column: 1 / -1;
-    padding: 2rem;
-    color: var(--clr-light);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid hsla(52, 94%, 94%, 0.1);
+
     position: sticky;
     top: 0;
     z-index: 10;
+    color: var(--clr-light);
     background-color: var(--clr-dark);
-    padding-bottom: 1rem;
 }
 
 .main-header h1 {
     font-weight: 300;
+    font-size: 1.4rem;
     margin-bottom: 05rem;
     max-width: 80ch;
+    flex: 1;
 }
 
 .main-header .title {
