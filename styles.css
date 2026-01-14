@@ -3,6 +3,7 @@
     --clr-dark: hsla(88, 38%, 15%, 1);
     --clr-light: hsla(52, 94%, 94%, 1);
     --clr-light-transp: hsla(52, 94%, 94%, 0.75);
+    --clr-light-darker: hsla(52, 94%, 90%, 0.5);;
     --clr-accent-light: hsla(32, 65%, 62%, 1);
     --clr-accent: hsla(28, 67%, 44%, 1);
 }
@@ -112,14 +113,6 @@ aside {
     align-content: center;
 }
 
-.dot {
-  height: 50px;
-  width: 50px;
-  background-color: var(--clr-primary);
-  border-radius: 50%;
-  display: inline-block;
-}
-
 .nav-list {
     display: flex;
     flex-direction: column;
@@ -152,6 +145,53 @@ aside {
 
 .icon {
     font-size: 1.4rem;
+}
+
+.nav-footer {
+    margin-top: auto;
+    padding: 1.2rem;
+    background-color: var(--clr-light-darker);
+    border-radius: 20px;
+    display: grid;
+    grid-template: auto auto/ auto 1fr;
+    gap: 0.2rem 0.8rem;
+    border: 1px solid hsla(74, 32%, 32%, 0.25);
+}
+
+.nav-footer .dot {
+    grid-row: 1 / -1;
+    align-self: center;
+    height: 40px;
+    width: 40px;
+    border: 2px solid var(--clr-light);
+    background-color: var(--clr-primary);
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.user-profile {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.role {
+    grid-column: 2;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--clr-primary);
+    opacity: 0.8;
+}
+
+.user-status {
+    grid-column: 1 / -1;
+    margin-top: 0.6rem;
+    padding-top: 0.6rem;
+    border-top: 1px dashed hsla(74, 32%, 32%, 0.25);
+    font-size: 0.85rem;
+    font-style: italic;
+    color: var(--clr-accent);
 }
 
 main {
