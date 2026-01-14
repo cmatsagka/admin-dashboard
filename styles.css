@@ -225,10 +225,23 @@ aside {
 }
 
 .main-content {
+    height: 100%;
+    overflow-y: auto;
+    padding-right: 0.5rem;
+
     grid-area: main;
     display: grid;
     grid-template: auto / 1.5fr 1fr;
     gap: 2rem;
+}
+
+main.main-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+main.main-content::-webkit-scrollbar-thumb {
+    background-color: var(--clr-accent-light);
+    border-radius: 10px;
 }
 
 .main-header {
