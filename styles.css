@@ -349,6 +349,48 @@ aside {
     height: 30px;
 }
 
+.chart-container {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background-color: hsla(52, 94%, 90%, 0.3);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.honey-wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, var(--clr-accent), var(--clr-accent-light));
+
+    /* The clip-path defines the "data points" 
+       Format: (x y, x y, x y...) 0 100% is bottom left, 100% 100% is bottom right */
+    clip-path: polygon(
+        0% 80%, 
+        15% 70%, 
+        30% 85%, 
+        45% 40%, 
+        60% 65%, 
+        75% 20%, 
+        90% 55%, 
+        100% 45%, 
+        100% 100%, 
+        0% 100%
+    );
+    
+    transition: all 0.5s ease;
+}
+
+.grid-lines {
+    position: absolute;
+    inset: 0;
+    background-size: 100% 25%;
+    background-image: linear-gradient(to bottom, hsla(88, 38%, 15%, 0.1) 1px, transparent 1px);
+}
+
 footer {
     grid-area: footer;
     text-align: center;
