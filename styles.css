@@ -73,6 +73,11 @@ input{
     font-size: 1.1rem;
 }
 
+input:focus {
+    outline: 2px solid var(--clr-accent-light);
+    border-color: var(--clr-accent);
+}
+
 .container {
     padding: 1.6rem;
     display: grid;
