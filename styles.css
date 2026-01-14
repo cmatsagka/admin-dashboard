@@ -175,6 +175,10 @@ main {
     background-color: var(--clr-light);
 }
 
+.seed-bank img {
+    justify-self: center;
+}
+
 footer {
     grid-area: footer;
     text-align: center;
