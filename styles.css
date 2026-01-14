@@ -55,7 +55,7 @@ button, input {
     color: var(--clr-light);
     padding: 0.6rem;
     border: 1px solid var(--clr-accent-light);
-    border-radius: 12px;
+    border-radius: 24px;
     font-weight: 600;
     font-size: 1.1rem;
     transition: transform 0.2s ease, background-color 0.2s ease;
@@ -91,7 +91,7 @@ aside {
     gap: 1rem;
     padding: 1.2rem;
     border: 0;
-    border-radius: 12px;
+    border-radius: 24px;
     box-shadow: 0 12px 12px -8px hsl(from var(--clr-light) h s l / 0.25);
     padding: 0.6rem;
     background-color: var(--clr-light);
@@ -150,7 +150,7 @@ main {
 .site-card{
     margin-bottom: 4rem;
     border: 0;
-    border-radius: 12px;
+    border-radius: 24px;
     box-shadow: 0 12px 12px -8px hsl(from var(--clr-light) h s l / 0.25);
     padding: 0.6rem;
     background-color: var(--clr-light);
@@ -169,7 +169,7 @@ main {
 
 .card {
     border: 0gi;
-    border-radius: 12px;
+    border-radius: 24px;
     box-shadow: 0 12px 12px -8px hsl(from var(--clr-light) h s l / 0.25);
     padding: 0.6rem;
     background-color: var(--clr-light);
