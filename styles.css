@@ -277,6 +277,24 @@ main {
     padding-bottom: 0.8rem;
 }
 
+.site-status {
+    padding: 0.4rem 1rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+
+.site-status.thriving { 
+    background-color: var(--clr-primary); 
+    color: var(--clr-light); 
+}
+
+.site-status.thirsty { 
+    background-color: var(--clr-accent); 
+    color: var(--clr-light); 
+}
+
 .right-col {
     grid-row: 2 / 3;
     grid-column: 2;
