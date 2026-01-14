@@ -268,6 +268,15 @@ main {
     background-color: var(--clr-light-transp);
 }
 
+.card-header {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid hsla(88, 38%, 15%, 0.1);
+    padding-bottom: 0.8rem;
+}
+
 .right-col {
     grid-row: 2 / 3;
     grid-column: 2;
