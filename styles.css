@@ -295,6 +295,16 @@ main {
     color: var(--clr-light); 
 }
 
+.visual-insight {
+    background-color: hsla(88, 38%, 15%, 0.05);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 16 / 9;
+    color: var(--clr-primary);
+}
+
 .right-col {
     grid-row: 2 / 3;
     grid-column: 2;
