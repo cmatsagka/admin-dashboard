@@ -247,8 +247,13 @@ main.main-content::-webkit-scrollbar-thumb {
 
 .main-header {
     grid-column: 1 / -1;
-    padding: 2rem 0;
+    padding: 2rem;
     color: var(--clr-light);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: var(--clr-dark);
+    padding-bottom: 1rem;
 }
 
 .main-header h1 {
