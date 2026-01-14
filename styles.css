@@ -349,6 +349,12 @@ aside {
     height: 30px;
 }
 
+.pollen-path {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .chart-container {
     position: relative;
     width: 100%;
