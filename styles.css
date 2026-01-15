@@ -323,6 +323,23 @@ aside {
 
 .icon {
     font-size: 1.4rem;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: sepia(100%) hue-rotate(40deg) saturate(100%);
+}
+
+.nav-item.active .icon img {
+    filter: brightness(0) invert(1);
 }
 
 .secondary-nav {
