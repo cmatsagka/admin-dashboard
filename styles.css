@@ -752,9 +752,9 @@ main.main-content::-webkit-scrollbar-thumb {
 
 .seed-bank li {
     display: grid;
-    grid-template-columns: 80px 40px 1fr auto;
+    grid-template-columns: 85px 35px 1fr auto;
     align-items: center;
-    gap: 0.8rem;
+    gap: 1rem;
     padding: 0.8rem 0;
     border-bottom: 1px solid hsla(88, 38%, 15%, 0.05);
 }
@@ -765,8 +765,21 @@ main.main-content::-webkit-scrollbar-thumb {
     text-align: left;
 }
 
-.seed-bank img {
+.seed-icon-wrapper {
+    width: 30px;
     height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--clr-light-darker);
+    border-radius: 8px;
+}
+
+.seed-icon-wrapper img {
+    width: 18px;
+    height: 18px;
+    filter: invert(31%) sepia(11%) saturate(1454%) hue-rotate(32deg) brightness(97%) contrast(85%);
+    opacity: 0.8;
 }
 
 .stock-container {
