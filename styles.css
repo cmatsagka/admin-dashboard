@@ -455,6 +455,10 @@ main.main-content::-webkit-scrollbar-thumb {
     height: 30px;
 }
 
+.stock-number {
+    width: 45%;
+}
+
 .request-more {
     padding: 0.3rem 0.8rem;
     font-size: 0.75rem;
