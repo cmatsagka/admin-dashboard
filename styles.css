@@ -296,6 +296,43 @@ main.main-content::-webkit-scrollbar-thumb {
     font-size: 0.9rem;
 }
 
+.btn-search {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color: var(--clr-accent-light);
+    border: none;
+    flex-shrink: 0;
+}
+
+.search-icon {
+    width: 14px;
+    height: 14px;
+    border: 2px solid var(--clr-light);
+    border-radius: 50%;
+    position: relative;
+    display: inline-block;
+}
+
+.search-icon::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 8px;
+    background-color: var(--clr-light);
+    bottom: -5px;
+    right: -3px;
+    transform: rotate(-45deg);
+}
+
+.btn-search:hover {
+    background-color: var(--clr-accent);
+    transform: scale(1.05);
+}
+
 .filter {
     padding: 0.5rem 1rem;
     white-space: nowrap;
