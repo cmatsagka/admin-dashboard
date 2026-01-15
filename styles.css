@@ -967,3 +967,22 @@ footer {
         overflow-y: visible;
     }
 }
+
+@media (max-width: 768px) {
+    .site-card {
+        grid-template-columns: 1fr; /* Map on top, info below */
+    }
+    
+    .right-col {
+        padding: 0;
+        max-height: none; /* Let it expand */
+    }
+    
+    .seed-bank li {
+        grid-template-columns: 1fr auto; /* Simplify inventory list for mobile */
+    }
+    
+    .seed-icon-wrapper, .request-more {
+        display: none; /* Hide non-essential elements on tiny screens */
+    }
+}
