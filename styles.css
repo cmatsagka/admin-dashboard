@@ -410,6 +410,14 @@ main.main-content::-webkit-scrollbar-thumb {
     gap: 1.5rem;
     padding: 0 1.2rem;
     font-size: 1rem;
+
+    max-height: calc(100vh - 150px);
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.right-col::-webkit-scrollbar {
+    display: none;
 }
 
 .card {
