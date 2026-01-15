@@ -403,6 +403,8 @@ main.main-content::-webkit-scrollbar-thumb {
     color: var(--clr-primary);
 }
 
+
+
 .right-col {
     grid-column: 2;
     display: flex;
@@ -473,7 +475,6 @@ main.main-content::-webkit-scrollbar-thumb {
 }
 
 .stock-bar {
-    width: 45%;
     height: 100%;
     background: linear-gradient(90deg, var(--clr-accent-light, var(--clr-accent)));
     border-radius: 10px;
