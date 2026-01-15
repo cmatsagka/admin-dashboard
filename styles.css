@@ -1,3 +1,5 @@
+@import url('https://rsms.me/inter/inter.css');
+
 :root {
     --clr-primary: hsl(74, 33%, 32%);
     --clr-dark: hsla(88, 38%, 15%, 1);
@@ -6,6 +8,11 @@
     --clr-light-darker: hsla(52, 94%, 90%, 0.5);
     --clr-accent-light: hsla(32, 65%, 62%, 1);
     --clr-accent: hsla(28, 67%, 44%, 1);
+
+    font-family: 'Inter', sans-serif;
+    @supports (font-variation-settings: normal) {
+        font-family: 'Inter var', sans-serif;
+    }
 }
 
 * {
@@ -20,7 +27,8 @@ body {
     display: flex;
     background-color: var(--clr-dark);
     color: var(--clr-dark);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    letter-spacing: -0.01em;
     font-size: 1.25rem;
     line-height: 1.4;
 }
