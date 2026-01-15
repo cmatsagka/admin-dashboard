@@ -410,7 +410,6 @@ main.main-content::-webkit-scrollbar-thumb {
     gap: 1.5rem;
     padding: 0 1.2rem;
     font-size: 1rem;
-    text-align: center;
 }
 
 .card {
@@ -426,6 +425,7 @@ main.main-content::-webkit-scrollbar-thumb {
     background: linear-gradient(135deg, var(--clr-accent-light), var(--clr-accent));
     color: var(--clr-light);
     border: none;
+    text-align: center;
 }
 
 .seed-bank ul {
@@ -447,10 +447,24 @@ main.main-content::-webkit-scrollbar-thumb {
     height: 30px;
 }
 
+.request-more {
+    padding: 0.3rem 0.8rem;
+    font-size: 0.75rem;
+    background-color: transparent;
+    color: var(--clr-primary);
+    border: 1px solid var(--clr-primary);
+}
+
+.request-more:hover {
+    background-color: var(--clr-primary);
+    color: var(--clr-light);
+}
+
 .pollen-path {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align: center;
 }
 
 .chart-container {
@@ -493,6 +507,10 @@ main.main-content::-webkit-scrollbar-thumb {
     inset: 0;
     background-size: 100% 25%;
     background-image: linear-gradient(to bottom, hsla(88, 38%, 15%, 0.1) 1px, transparent 1px);
+}
+
+.community-notes {
+    text-align: center;
 }
 
 footer {
