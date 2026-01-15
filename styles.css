@@ -139,7 +139,7 @@ aside {
 
 .brand-name {
     color: var(--clr-primary);
-    font-weight:400;
+    font-weight:700;
     font-size: 1.4rem;
     line-height: 1;
 }
@@ -607,6 +607,10 @@ main.main-content::-webkit-scrollbar-thumb {
     border-bottom: 1px solid hsla(88, 38%, 15%, 0.1);
     padding-bottom: 0.8rem;
     margin-bottom: 0.5rem;
+}
+
+.site-name {
+    font-weight: 600;
 }
 
 .site-icon {
