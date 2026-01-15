@@ -836,6 +836,11 @@ main.main-content::-webkit-scrollbar-thumb {
     color: var(--clr-light);
 }
 
+.request-more:active {
+    transform: scale(0.95);
+    background-color: var(--clr-accent);
+}
+
 .pollen-path {
     display: flex;
     flex-direction: column;
