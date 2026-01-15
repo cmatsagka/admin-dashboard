@@ -456,6 +456,7 @@ main.main-content::-webkit-scrollbar-thumb {
     z-index: 10;
     color: var(--clr-light);
     background-color: var(--clr-dark);
+    opacity: 0.85;
 }
 
 .main-header h1 {
