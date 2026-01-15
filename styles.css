@@ -962,27 +962,52 @@ footer {
         position: relative;
     }
 
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .stats-wrapper { 
+        display: flex; gap: 1rem; 
+    }
+
+    .pollinator-alert, .climate-threshold {
+        flex: 1;
+        margin-bottom: 0;
+    }
+
     .main-content {
-        grid-template-columns: 1fr;
         overflow-y: visible;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1rem 0;
+
+    }
+
+    .left-col, .right-col {
+        grid-column: 1 / -1;
+        width: 100%;
+        padding: 0;
+    }
+
+    .site-card, .card {
+        max-width: 800px;
+        margin-inline: auto;
+        width: 100%;
     }
 }
 
 @media (max-width: 768px) {
     .site-card {
-        grid-template-columns: 1fr; /* Map on top, info below */
+        grid-template-columns: 1fr;
     }
     
     .right-col {
-        padding: 0;
-        max-height: none; /* Let it expand */
+        max-height: none;
     }
     
     .seed-bank li {
-        grid-template-columns: 1fr auto; /* Simplify inventory list for mobile */
-    }
-    
-    .seed-icon-wrapper, .request-more {
-        display: none; /* Hide non-essential elements on tiny screens */
+        grid-template-columns: 1fr auto;
     }
 }
