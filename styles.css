@@ -582,6 +582,15 @@ main.main-content::-webkit-scrollbar-thumb {
     background-color: var(--clr-light-transp);
 }
 
+.site-card:hover .site-icon {
+    background-color: var(--clr-accent-light);
+    transition: background-color 0.3s ease;
+}
+
+.site-card:hover .site-icon img {
+    filter: invert(93%) sepia(23%) saturate(350%) hue-rotate(323deg) brightness(105%) contrast(95%);
+}
+
 .card-header {
     grid-column: 1 / -1;
     display: flex;
