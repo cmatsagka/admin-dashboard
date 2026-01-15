@@ -394,16 +394,51 @@ main.main-content::-webkit-scrollbar-thumb {
 }
 
 .visual-insight {
-    background-color: hsla(88, 38%, 15%, 0.05);
+    background-color: var(--clr-dark);
+    border: 1px solid hsla(74, 32%, 32%, 0.4);
+    color: var(--clr-primary);
     border-radius: 16px;
+
+    position: relative;
+    overflow: hidden;
+
     display: flex;
     align-items: center;
     justify-content: center;
     aspect-ratio: 16 / 9;
-    color: var(--clr-primary);
 }
 
+.map-grid {
+    position: absolute;
+    inset: 0;
+    opacity: 0.2;
+    background-image: 
+        linear-gradient(var(--clr-primary) 1px, transparent 1px),
+        linear-gradient(90deg, var(--clr-primary) 1px, transparent 1px);
+    background-size: 30px 30px;
+}
 
+.map-marker {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: var(--clr-accent-light);
+    border-radius: 50%;
+    box-shadow: 0 0 15px var(--clr-accent-light);
+}
+
+.map-label {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: var(--clr-primary);
+    background: var(--clr-light-transp);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 800;
+}
 
 .right-col {
     grid-column: 2;
