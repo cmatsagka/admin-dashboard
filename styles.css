@@ -1012,6 +1012,9 @@ footer {
 
     .nav-toggle:checked ~ .sidebar-content {
         display: flex;
+        display: flex;
+        flex-basis: 100%;
+        margin-top: 1rem;
         animation: slideDown 0.3s ease-out;
     }
 
