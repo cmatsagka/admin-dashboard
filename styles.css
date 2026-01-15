@@ -249,6 +249,48 @@ aside {
     overflow: hidden;
     margin-bottom: 0.5rem;
 }
+
+.gauge-zone { 
+    height: 100%; 
+}
+
+.gauge-zone.cold { 
+    width: 30%; 
+    background-color: var(--clr-accent-light); 
+    opacity: 0.5; 
+}
+
+.gauge-zone.safe { 
+    width: 40%; 
+    background-color: var(--clr-primary); 
+}
+
+.gauge-zone.hot  { 
+    width: 30%; 
+    background-color: var(--clr-accent); 
+    opacity: 0.8;
+}
+
+.gauge-pointer {
+    position: absolute;
+    top: -2px;
+    width: 4px;
+    height: 12px;
+    background: var(--clr-dark);
+    border-radius: 2px;
+    border: 1px solid hsl(0, 0%, 93%);
+    transition: left 1s ease-in-out;
+}
+
+.threshold-status {
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.threshold-status span {
+    color: var(--clr-primary);
+    text-transform: uppercase;
+}
  
 .nav-list {
     display: flex;
