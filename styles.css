@@ -292,8 +292,18 @@ main.main-content::-webkit-scrollbar-thumb {
 }
 
 .search-bar {
-    padding: 0.5rem 1rem;
+    flex: 1;
+    max-width: 400px;
+    background-color: hsla(52, 94%, 94%, 0.1);
+    border: 1px solid hsla(52, 94%, 94%, 0.2);
+    color: var(--clr-light);
+    padding: 0.6rem 1rem;
     font-size: 0.9rem;
+}
+
+.search-bar::placeholder {
+    color: var(--clr-light);
+    opacity: 0.6;
 }
 
 .btn-search {
