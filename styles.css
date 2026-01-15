@@ -366,6 +366,33 @@ main.main-content::-webkit-scrollbar-thumb {
     gap: 1.5rem;
 }
 
+.seasonal-tracker {
+    padding: 1rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--clr-primary);
+}
+
+.tracker-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.progress-track {
+    height: 6px;
+    background-color: var(--clr-light-darker);
+    border-radius: 10px;
+}
+
+.progress-fill {
+    width: 65%;
+    height: 100%;
+    background-color: var(--clr-primary);
+    border-radius: 10px;
+}
+
 .site-card{
     display: grid;
     grid-template-columns: 1fr 1fr;
