@@ -118,6 +118,43 @@ aside {
     background-color: var(--clr-light-transp);
 }
 
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    display: none;
+    cursor: pointer;
+    padding: 1rem;
+    position: relative;
+    z-index: 100;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    background: var(--clr-primary);
+    width: 25px;
+    height: 3px;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: "";
+    position: absolute;
+}
+
+.nav-toggle-label span::before { 
+    bottom: 8px; 
+}
+
+.nav-toggle-label span::after { 
+    top: 8px; 
+}
+
 .logo {
     margin-bottom: 3rem;
     padding: 0.5rem;
@@ -963,6 +1000,40 @@ footer {
         overflow-y: auto;
     }
 
+    .nav-toggle-label {
+        display: block;
+    }
+
+    .sidebar-content {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-toggle:checked ~ .sidebar-content {
+        display: flex;
+        animation: slideDown 0.3s ease-out;
+    }
+
+    .nav-toggle:checked + .nav-toggle-label span {
+        background: transparent;
+    }
+
+    .nav-toggle:checked + .nav-toggle-label span::before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    .nav-toggle:checked + .nav-toggle-label span::after {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+    @keyframes slideDown {
+        from {opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform:translateY(0); }
+    }
+
     aside.sidebar {
         height: auto;
         position: relative;
@@ -983,7 +1054,7 @@ footer {
         margin-bottom: 0;
     }
 
-        .main-content {
+    .main-content {
         overflow-y: visible;
         display: flex;
         flex-direction: column;
