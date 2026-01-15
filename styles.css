@@ -144,6 +144,12 @@ aside {
     line-height: 1;
 }
 
+.stats-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
 .pollinator-alert {
     background-color: var(--clr-dark);
     color: var(--clr-light);
@@ -969,6 +975,7 @@ footer {
 
     .stats-wrapper { 
         display: flex; gap: 1rem; 
+        flex-direction: row;
     }
 
     .pollinator-alert, .climate-threshold {
@@ -976,7 +983,7 @@ footer {
         margin-bottom: 0;
     }
 
-    .main-content {
+        .main-content {
         overflow-y: visible;
         display: flex;
         flex-direction: column;
@@ -1008,5 +1015,9 @@ footer {
     
     .seed-bank li {
         grid-template-columns: 1fr auto;
+    }
+
+    .stats-wrapper {
+        flex-direction: column;
     }
 }
