@@ -372,6 +372,7 @@ main.main-content::-webkit-scrollbar-thumb {
 .atmosphere-widget {
     background: linear-gradient(135deg, var(--clr-accent-light), var(--clr-accent));
     color: var(--clr-light);
+    border: none;
 }
 
 .seed-bank ul {
