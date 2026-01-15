@@ -359,6 +359,7 @@ main.main-content::-webkit-scrollbar-thumb {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
+    align-items: start;
     padding: 1.5rem;
     border-radius: 24px;
     border: 1px solid hsla(52, 94%, 100%, 0.5);
@@ -438,6 +439,32 @@ main.main-content::-webkit-scrollbar-thumb {
     padding: 2px 6px;
     border-radius: 4px;
     font-weight: 800;
+}
+
+.monitor {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-top: 1rem;
+}
+
+.bees, .plants {
+    font-size: 1rem;
+    padding: 0.5rem;
+    background-color: var(--clr-light-darker);
+    border-radius: 8px;
+    border-left: 4px solid var(--clr-accent);
+}
+
+.actions {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.actions button {
+    flex: 1;
 }
 
 .right-col {
